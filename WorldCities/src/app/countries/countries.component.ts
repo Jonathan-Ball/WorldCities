@@ -54,7 +54,7 @@ export class CountriesComponent implements OnInit {
       this.paginator.length = result.totalCount;
       this.paginator.pageIndex = result.pageIndex;
       this.paginator.pageSize = result.pageSize;
-      this.countries = new MatTableDataSource<Country>(result.Data);
+      this.countries = new MatTableDataSource<Country>(result.data);
     }, error => console.error(error));
   }
 }
